@@ -92,3 +92,82 @@
 |10.|**Deployment and Containerization**|
 | |creating executable JARs and WARs|
 | |
+
+
+### UNIT TESTING
+| Unit Testing-JUnit | |
+| ----------------- | ---- |
+|**1. Available Frameworks:**|What is a unit test?|
+|Junit|Difference between unit vs integration vs functional tests|
+|TestNG etc.| AAA (Arrange-Act-Assert)|
+| |Maven/Gradle dependencies|
+| |Test Lifecycle|
+|**2.Basic Annotations:**|
+|| • @Test|
+||| • @BeforeEach, @AfterEach|
+|| • @BeforeAll, @AfterAll|
+|| • @DisplayName|
+|| • @Disable|
+||etc.|
+|**Assertions:**|
+| • assertEquals, assertNotEquals|
+| • assertTrue, assertFalse|
+| • assertNull, assertNotNull|
+| • assertThrows for exception testing|
+|Parameterized Tests|
+|Test Repetition|
+| • @RepeatedTest(n)|
+| |
+👉 Mocking|
+Available Frameworks:|
+Mockito|
+EasyMock|
+JMock|
+Mockito Core Concepts:|
+ • @Mock and Mockito.mock(Class.class)|
+ • @InjectMocks for injecting mocks|
+ • @BeforeEach with MockitoAnnotations.openMocks(this)|
+ • Testing Private/Static Methods (PowerMock or some other approach)|
+Stubbing Behavior|
+ • when(...).thenReturn(...)|
+ • when(...).thenThrow(...)|
+Verifying Calls|
+ • verify(...) after method call|
+ • verifyNoMoreInteractions(...)|
+Void Method Stubbing|
+ • doNothing().when(mock).method()|
+ • doThrow(...).when(...)|
+Argument Matchers:|
+ • any(), eq(), anyString(), anyInt(), etc.|
+ • Mixing matchers with exact values (and why it fails)|
+Behavior Verification:|
+Verify how many times called: times(n), never(), atLeastOnce()|
+Spies vs Mocks:|
+ ○ Mockito.spy() for partial mocking|
+ ○ Difference between mock() and spy()|
+Testing Configuration, Properties, and Profiles|
+Unit tests with different Spring profiles.|
+How to mock @Value, Environment, or @ConfigurationProperties.|
+Overriding properties for test-only behavior.|
+
+👉 Assertions & Matchers
+Frameworks:
+AssertJ 
+Hamcrest
+
+👉 Some Advanced Topics
+Test-Driven Development (TDD) 
+Write failing test first, then code
+Test Coverage:
+ • Tools: JaCoCo, IntelliJ coverage tool
+CI integration
+Run tests in GitHub Actions, GitLab CI/CD, Jenkins.
+Test Reports
+Generate HTML/XML test reports for build tools.
+
+👉 AI + Unit Testing
+Code Suggestion Tools (AI-Powered IDE Extensions)
+Using AI in CI/CD (Future-Forward)
+AI suggests missing test cases for changed methods
+AI flags flaky or redundant tests
+Autogenerate Missing Tests
