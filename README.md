@@ -2,6 +2,7 @@
 ### Spring Boot
 
 |  S.No | Topics |
+|------- | ------ |
 |  1. | **Introduction to Spring Boot:** |
 |  | what problem it solved
 |  | Its features and advantages
